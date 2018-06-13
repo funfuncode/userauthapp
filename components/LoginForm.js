@@ -57,10 +57,7 @@ class LoginForm extends Component {
           </CardSection>
           <Text style={styles.errorTextStyle}>{this.state.error}</Text>
           <CardSection>
-            { this.state.authenticating ?
-              <Spinner size="large" /> :
-              <Button onPress={this.submitHandler}>Log in</Button>
-            }
+            { this.state.authenticating ? <Spinner size="large" /> : <Button onPress={this.submitHandler}>Log in</Button> }
           </CardSection>
         </Card>
 
